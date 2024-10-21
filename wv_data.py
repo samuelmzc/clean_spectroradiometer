@@ -19,9 +19,3 @@ wv_dict = {
 bands = []
 for name, _ in wv_dict.items():
     bands.append(name)
-
-n_bands = len(bands)
-"""
-for band in bands:
-    plt.plot(WL, wv_dict[band], label = band)"""
-
