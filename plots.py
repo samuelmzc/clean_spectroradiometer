@@ -42,6 +42,9 @@ def plot_ordered_type(ordered):
     
 
 def plot_vs_wv(ordered):
+    """
+    Gráficas con la superposición de las bandas del WorldView-2
+    """
     fig = plt.figure(figsize=(13, 7))
 
     for item in ordered:
@@ -55,21 +58,3 @@ def plot_vs_wv(ordered):
     plt.xlim(350, max(WL))
     plt.legend(loc = "upper right")
     plt.tight_layout()
-    
-
-
-
-plot_vs_wv(vegetacion1)
-plt.savefig("figuras/vegetacion1_wv.pdf")
-
-plt.clf()
-
-plot_vs_wv(vegetacion2)
-plt.savefig("figuras/vegetacion2_wv.pdf")
-
-plt.clf()
-
-plot_vs_wv(suelos)
-plt.savefig("figuras/suelos_wv.pdf")
-
-
